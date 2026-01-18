@@ -3,7 +3,7 @@ import type { NextRequest } from 'next/server';
 import * as jose from 'jose';
 
 // Mock secret for JWT verification
-const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET || 'super-secret-key-change-me');
+const JWT_SECRET = new TextEncoder().encode(process.env.JWT_SECRET);
 
 interface AuthConfig {
     requiredPermission?: string;

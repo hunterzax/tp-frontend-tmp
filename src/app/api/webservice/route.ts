@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 import type { NextRequest } from 'next/server';
 import { withAuth, UserPayload } from '@/utils/apiAuthMiddleware';
 
-const UPSTREAM_URL = 'https://api.upstream.com'; // Mock upstream
+const UPSTREAM_URL = process.env.UPSTREAM_URL || ''; // Secure: No default
 const ALLOWED_ORIGINS = ['http://localhost:3000', 'https://myapp.com'];
 
 async function handler(req: NextRequest, _context: { params: Record<string, string | string[]> }, user: UserPayload) {
@@ -12,16 +12,17 @@ async function handler(req: NextRequest, _context: { params: Record<string, stri
         return NextResponse.json({ error: 'CORS policy violation' }, { status: 403 });
     }
 
-    // SSRF Protection: Validate URL (Mocking validation here since URL is hardcoded base)
+    // SSRF Protection: Validate URL
     if (!UPSTREAM_URL.startsWith('https://')) {
+        console.error('Missing or invalid UPSTREAM_URL configuration');
         return NextResponse.json({ error: 'Configuration Error' }, { status: 500 });
     }
 
     try {
         // Inject Server-Side Secrets (Never exposed to client)
         const secureHeaders = {
-            'Authorization': `Bearer ${process.env.UPSTREAM_ACCESS_TOKEN || 'secure-upstream-token'}`,
-            'x-jwt-token': process.env.UPSTREAM_JWT_TOKEN || 'server-signed-jwt',
+            'Authorization': `Bearer ${process.env.UPSTREAM_ACCESS_TOKEN}`,
+            'x-jwt-token': process.env.UPSTREAM_JWT_TOKEN || '',
             'Content-Type': 'application/json',
         };
 
