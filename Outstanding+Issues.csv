@@ -1,0 +1,6 @@
+﻿CID,Type,Impact,Status,First Detected,Owner,Classification,Severity,Action,Component,Category,File,Function,CWE
+642269,Expression with no effect,Medium,New,01/18/26,Unassigned,Unclassified,Unspecified,Undecided,Other,Incorrect expression,/Users/zax/Documents/Project_TPA_SCAN/st-temp/tp-frontend/src/components/tables/DataTable.tsx,<script>,398
+642223,Expression with no effect,Medium,New,01/18/26,Unassigned,Unclassified,Unspecified,Undecided,Other,Incorrect expression,/Users/zax/Documents/Project_TPA_SCAN/st-temp/tp-frontend/src/app/[lng]/authorization/page.tsx,<script>,398
+641920,Expression with no effect,Medium,New,01/18/26,Unassigned,Unclassified,Unspecified,Undecided,Other,Incorrect expression,/Users/zax/Documents/Project_TPA_SCAN/st-temp/tp-frontend/src/components/headers/BreadcrumbsMenu.tsx,<script>,398
+641913,Expression with no effect,Medium,New,01/18/26,Unassigned,Unclassified,Unspecified,Undecided,Other,Incorrect expression,/Users/zax/Documents/Project_TPA_SCAN/st-temp/tp-frontend/src/components/headers/AppMenu.tsx,<script>,398
+641892,Expression with no effect,Medium,New,01/18/26,Unassigned,Unclassified,Unspecified,Undecided,Other,Incorrect expression,/Users/zax/Documents/Project_TPA_SCAN/st-temp/tp-frontend/src/components/headers/Layout.tsx,<script>,398
