@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React from 'react';
 import DataTable from '@/components/tables/DataTable';
 import { Gauge, Zap, TrendingUp } from 'lucide-react';
