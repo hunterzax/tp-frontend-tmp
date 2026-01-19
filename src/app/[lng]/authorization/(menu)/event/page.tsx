@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from 'react';
 import DataTable from '@/components/tables/DataTable';
 import { AlertCircle, Info, AlertTriangle } from 'lucide-react';
