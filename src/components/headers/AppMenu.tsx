@@ -1,5 +1,5 @@
 // coverity[no_effect]
-"use client";
+// "use client";
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X, BarChart, Calendar, Settings, FileText, Zap, PieChart } from 'lucide-react';

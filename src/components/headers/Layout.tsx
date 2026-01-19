@@ -1,5 +1,5 @@
 // coverity[no_effect]
-"use client";
+// "use client";
 import React from 'react';
 import Link from 'next/link';
 import AppMenu from './AppMenu'; // Enhanced Menu

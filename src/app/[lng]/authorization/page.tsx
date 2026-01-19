@@ -1,5 +1,5 @@
 // coverity[no_effect]
-"use client";
+// "use client";
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getService } from '@/utils/postService';

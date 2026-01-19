@@ -1,5 +1,5 @@
 // coverity[no_effect]
-"use client";
+// "use client";
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, ArrowUpDown, Search } from 'lucide-react';
 import { clsx } from 'clsx';

@@ -1,5 +1,5 @@
 // coverity[no_effect]
-"use client";
+// "use client";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { ChevronRight, Home } from 'lucide-react';
