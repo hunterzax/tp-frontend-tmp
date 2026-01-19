@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from 'react';
 import { User, Mail, Shield, Save } from 'lucide-react';
 
