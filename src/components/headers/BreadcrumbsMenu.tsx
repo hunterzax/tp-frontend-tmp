@@ -1,3 +1,4 @@
+// coverity[no_effect]
 "use client";
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
@@ -37,8 +38,8 @@ export default function BreadcrumbsMenu() {
                                 <Link
                                     href={isLast ? '#' : href}
                                     className={`ml-1 text-sm font-medium md:ml-2 ${isLast
-                                            ? 'text-gray-500 cursor-default'
-                                            : 'text-gray-700 hover:text-blue-600'
+                                        ? 'text-gray-500 cursor-default'
+                                        : 'text-gray-700 hover:text-blue-600'
                                         }`}
                                 >
                                     {segment.charAt(0).toUpperCase() + segment.slice(1)}
